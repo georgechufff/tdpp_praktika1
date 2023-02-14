@@ -4,4 +4,8 @@ choice = input()
 
 operations = {'+' : a + b, '-': a - b, '*': a * b, '/': a / b}
 
-print(operations[choice] if choice in operations.keys() else "Недопустимая операция")
+if choice in operations.keys():
+	print(operations[choice])
+else:
+	print("Недопустимая операция")
+
